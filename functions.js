@@ -63,7 +63,7 @@ function renderWeatherInfo(url) {
             if (writeCity.value !== '') {
                 titleCityWeather.textContent = `Vremea acum pentru ${writeCity.value}`;
             }
-            inconNow.setAttribute('src', `http://openweathermap.org/img/wn/${iconCode}.png`)
+            inconNow.setAttribute('src', `https://openweathermap.org/img/wn/${iconCode}.png`)
             description.textContent = parsedResponse.weather[0].description;
             humidity.textContent = parsedResponse.main.humidity;
             pressure.textContent = parsedResponse.main.pressure;
@@ -142,7 +142,7 @@ function renderForecast(url) {
 
                 var forecastIcon = document.createElement('img')
                 var iconCode = forecastListElements.weather[0].icon
-                forecastIcon.setAttribute('src', `http://openweathermap.org/img/wn/${iconCode}.png`)
+                forecastIcon.setAttribute('src', `https://openweathermap.org/img/wn/${iconCode}.png`)
                 currentContainer.appendChild(forecastIcon)
 
                 var forecastHour = document.createElement('p')
