@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="weatherApp">
+
+        <section class="weatherApp__inputs">
+
+            <input type="text" placeholder="Introduceti Orasul" id="writeCity"
+                class="weatherApp__inputs_writeCity inputs">
+            <input type="button" value="Afiseaza vremea" id="displayWeather"
+                class="weatherApp__inputs_displayWeather inputs">
+            <input type="button" value="Afiseaza prognoza" id="displayForecast"
+                class="weatherApp__inputs_displayForecast inputs">
+
+        </section>
+
+        <section class="weatherApp__options">
+            <div class="weatherApp__options_units">
+                <div class="options__units_F">
+                    <label for="fahrenheit">Vezi temperatura in Fahrenheit</label>
+                    <input name="group1" class="" type="radio" id="fahrenheit">
+                </div>
+                <div class="options__units_C">
+                    <label for="celsius">Vezi temperatura in Celsius</label>
+                    <input name="group1" class="" type="radio" id="celsius">
+                </div>
+            </div>
+        </section>
+
+        <section class="weatherApp__now">
+
+            <div class="weatherApp__now_container">
+
+                <div class="now__container_data">
+                    <p class="data__title"> <span id="titleCityWeather"></span></p>
+                    <div id="weatherInfo" class="data__info">
+                        <!-- <span id="iconNow"></span> -->
+                        <img src="" alt="" id="iconNow">
+                        <p>Descriere:<span id="description"></span></p>
+                        <p>Umiditate:<span id="humidity"></span></p>
+                        <p>Presiune:<span id="pressure"></span></p>
+                        <p>Temperatura curenta:<span id="currentTemp"></span></p>
+                        <p>Minima zilei:<span id="dayMin"></span></p>
+                        <p>Maxima zilei:<span id="dayMax"></span></p>
+                    </div>
+                </div>
+                <div class="now__container_map">
+                    <!-- <p class="map__title">Reprezentare cartografica</p> -->
+                    <!--                 
+                    -->
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="weatherApp__forecast">
+
+            <h1 class="forecast__title" id="titleCityForecast"></h1>
+            <div id="forecastInfo" class="weatherApp__forecast_container">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="functions.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

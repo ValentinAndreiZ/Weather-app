@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    background-color: #FCF7F8;
+}
+
+.weatherApp {
+    margin: 2rem;
+}
+
+.weatherApp__inputs{
+    display: flex;
+    flex-direction: row;
+    background-color: #CED3DC;
+    padding: 2rem;
+}
+
+.weatherApp__options {
+    background-color: #CED3DC;
+    padding: 2rem;
+}
+
+.weatherApp__options_units {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.weatherApp__inputs input[type="button"] {
+    /* color: red; */
+}
+
+.inputs {
+    color: #275DAD;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.inputs:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.weatherApp__inputs_writeCity{
+    padding: 1rem;
+    width: 50%;
+}
+
+.weatherApp__inputs_displayWeather{
+    width: 15%;
+}
+
+.weatherApp__inputs_displayForecast {
+    width: 15%;
+
+}
+
+.weatherApp__now {
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+.weatherApp__now_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    background-color: #CED3DC;
+    color: #275DAD;
+}
+
+.weatherApp__now_container div {
+    padding: 2rem;
+}
+
+.now__container_data {
+    width: 20%;
+    /* background-color: #CED3DC; */
+}
+
+.data__title{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+}
+
+.now__container_map{
+    width: 60%;
+    /* background-color: #CED3DC; */
+}
+
+.map__title{
+    text-align: center;
+}
+
+.weatherApp__forecast{
+
+}
+
+.forecast__title {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.weatherApp__forecast_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
