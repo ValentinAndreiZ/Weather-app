@@ -19,19 +19,10 @@ body {
 .weatherApp__inputs{
     display: flex;
     flex-direction: row;
+    /* justify-content: space-around; */
     background-color: #CED3DC;
     padding: 2rem;
-}
-
-.weatherApp__options {
-    background-color: #CED3DC;
-    padding: 2rem;
-}
-
-.weatherApp__options_units {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6rem;
+    /* margin: 2rem; */
 }
 
 .weatherApp__inputs input[type="button"] {
